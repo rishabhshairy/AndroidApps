@@ -75,6 +75,12 @@ public final class QueryUtils {
             }
         }
 
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         return jsonResult;
     }
 
