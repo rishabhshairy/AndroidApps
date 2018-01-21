@@ -5,13 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-<TextView
-    android:id="@+id/newsTitle"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textSize="25sp"
-    tools:text="Title"
-    android:padding="12dp"/>
+
+    <TextView
+        android:id="@+id/newsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        tools:text="Title"/>
+
+    <TextView
+        android:id="@+id/authorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        tools:text="Author" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,23 +32,25 @@
             android:id="@+id/newsSection"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
-            tools:text="Section"
             android:layout_weight="1"
             android:gravity="start"
+            android:padding="10dp"
             android:textAlignment="viewStart"
-            android:padding="10dp"/>
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="15sp"
+            tools:text="Section" />
 
         <TextView
             android:id="@+id/newsDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="15sp"
-            tools:text="20-01-2018"
-            android:includeFontPadding="true"
-            android:textAlignment="viewEnd"
             android:gravity="end"
-            android:padding="5dp"/>
+            android:includeFontPadding="true"
+            android:padding="5dp"
+            android:textAlignment="viewEnd"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="15sp"
+            tools:text="20-01-2018" />
     </LinearLayout>
 </LinearLayout>
