@@ -157,7 +157,7 @@ public final class QueryUtils {
         builder.scheme("http")
                 .encodedAuthority("content.guardianapis.com")
                 .appendPath("search")
-                .appendQueryParameter("order-by", "relevance")
+                .appendQueryParameter("order-by", "newest")
                 .appendQueryParameter("show-references", "author")
                 .appendQueryParameter("show-tags", "contributor")
                 .appendQueryParameter("q", "Android")
